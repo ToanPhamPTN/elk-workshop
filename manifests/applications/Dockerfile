@@ -12,7 +12,7 @@ COPY . /home/gradle/project
 RUN gradle build --no-daemon 
 
 
-FROM java:jre-alpine
+FROM eclipse-temurin:8-jre-alpine
 
 WORKDIR /home/gradle/project/
 
